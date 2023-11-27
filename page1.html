@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> page1</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- Bootstrap CSS library -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- JS library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- Latest compiled JavaScript library -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <style>
+      .checked{
+        color: red;
+        
+      }
+      
+    </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <h4>ONLINESHOP</h4>
+      </div>
+      <ul class="nav-links" style="margin-right: 1050px;">
+        <div class="menu">
+          <li><a  href="#shop">Home</a></li>
+          <li><a  href="#about">About</a></li>
+          <!-- <li> <a href="#services">Services</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </ul>
+      <!-- <a href="file:///D:/shop/cart.html">
+        <div class="cart"><img src="https://cdn.iconscout.com/icon/free/png-512/free-cart-388-457757.png?f=avif&w=256">
+        </div>
+      </a>
+      <a href="d:\shop\edit user.html">
+        <div class="avatar"><img
+            src="https://cdn.iconscout.com/icon/free/png-512/free-user-1912185-1617654.png?f=avif&w=256">
+        </div>
+      </a> -->
+    </nav>
+  </div>
+  
+
+<h1 style="text-align: center; margin-top: 100px;" id="shop"> Shopping</h1>
+
+
+
+
+
+  <!-- <div class="container">
+        <h3 id="trousers">Casual Trousers</h3>
+        <div class="row">
+          <div class="col-3">
+           <div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.com/asr/ef38f16b-03ea-47f6-b5dd-5293266d2d67.30ad8a0baa235753be0cc521f13033a3.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"  class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+            </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://i5.walmartimages.com/asr/2f1ec8e9-ceff-44de-8263-14a8e5031373.d7cd9b388ecc83e5f24aa27369277674.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">100$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">200$</span></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://eg.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/81/877704/1.jpg?6197" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">300$</span></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://rukminim1.flixcart.com/image/850/1000/xif0q/shopsy-trouser/s/x/i/48-sps-carrot-pant-casual-trousers-simran-collections-original-imagszht6nfk3k7r.jpeg?q=90" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">500$</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                </div>
+              </div>
+          </div>
+        </div> -->
+  <!-- --------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------- -->
+  <!-- <div class="row">
+            <div class="col-3">
+             <div class="card" style="width: 18rem;">
+              <img src="https://i5.walmartimages.com/seo/Jeans-Women-Yoga-Pants-Women-s-Trendy-Casual-Plain-Color-Elastic-Cotton-Linen-Trousers-Maternity-Leggings-Bell-Bottom-Clearance-Dark-Gray-XL_4c483afc-8761-4069-9c67-d7b558f26436.72b5957af401ed899c0964b7c3fa90e7.jpeg"  class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">300$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">500$</span></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://i5.walmartimages.com/asr/261c72bf-1563-48e3-8b66-ab5f1f83e61a.5a9bcb5b415bb6fcc2cdbe7584d1ba19.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">400$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">550$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://i.pinimg.com/736x/03/03/e0/0303e02e378b45cdd38adf07c01dfd55.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">350$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://m.media-amazon.com/images/I/7149t424-NL._AC_UY1100_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+          </div> -->
+  <!-- ----------------------------------------------------------------------------------------
+          ----------------------------------------------------------------------------------------------- -->
+  <!-- <h3 id="shirts" style=" margin-top: 20px !important;">Casual Shirts</h3>
+          <div class="row">
+            <div class="col-3">
+             <div class="card" style="width: 18rem;">
+              <img src="https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/67/357091/1.jpg?0528"  class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">200$</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://ae01.alicdn.com/kf/S09ce13ce1dd742e8be2a06ba798f6edaw.jpg_640x640Q90.jpg_.webp" style="height: 285px;"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">500$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">550$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://img1.exportersindia.com/product_images/bc-full/2019/12/6800480/ladies-casual-shirts-1575538815-5195739.jpeg" style="height: 285px;"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://ae01.alicdn.com/kf/H3fec2b57fb374102abadd024bcbf8ffdn/Shirt-Women-2023-Fashion-New-Spring-And-Summer-Temperament-Casual-Three-quarter-Sleeve-Shirt-Ladies-Western.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">350$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+          </div> -->
+  <!-- --------------------------------------------------------------------------------------
+          ----------------------------------------------------------------------------------------------- -->
+  <!-- <div class="row">
+            <div class="col-3">
+             <div class="card" style="width: 18rem;">
+              <img src="https://www.emmawillis.com/cdn/shop/products/sky-bengal-stripe-linen-drew-shirt-850762_600x.jpg?v=1622808721"  class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">220$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://cdn.shopify.com/s/files/1/0995/5544/files/2_53113562-b8ac-4678-9196-2631b5c656ce_x500.jpg?v=1688130300&alt=meta-preview" style="height: 285px;"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">300$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://m.media-amazon.com/images/I/61lqv19vx2L._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://www.saddleworldipswich.com.au/cdn/shop/files/10043496_03_warm_1200x.jpg?v=1693385859" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">300$</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+          </div> -->
+  <!-- -------------------------------------------------------------------------------------
+          ----------------------------------------------------------------------------------------------- -->
+  <!-- <div class="row">
+            <div class="col-3">
+             <div class="card" style="width: 18rem;">
+              <img src="https://rukminim2.flixcart.com/image/850/1000/l5h2xe80/top/z/j/e/l-top-udesi-original-imagf7kswe88g9w4.jpeg?q=90" style="height: 285px;"  class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">200$ </h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://ae01.alicdn.com/kf/H7a1b71b0e149465fafaa1bbb07f9f1c8b/Women-Tops-And-Blouses-Office-Lady-Blouse-Slim-Shirts-Women-Blouses-Plus-Size-Tops-Casual-Shirt.jpg" style="height: 285px;"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">100$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">150$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://m.media-amazon.com/images/I/51oaA3nEpHL._SS200_.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">250$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://down-my.img.susercontent.com/file/9bd5bbff660ca6d84a9d236e175d0809" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+          </div> -->
+  <!-- -------------------------------------------------------------------------------------
+          ------------------------------------------------------------------------------------------------- -->
+  <!-- <h3 id="t-shirts" style=" margin-top: 20px !important;">Casual T-shirts</h3>
+          <div class="row">
+            <div class="col-3">
+             <div class="card" style="width: 18rem;">
+              <img src="https://images.meesho.com/images/products/271322342/dbhj9_512.webp" style="height: 285px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">50$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">100$</span></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbcSIN5j3UAodGmpnG-9EuJNjMpUbfq3OnsA&usqp=CAU" style="height: 285px;"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">400$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://media.karousell.com/media/photos/products/2023/9/18/instocks_tom_and_jerry_oversiz_1695044029_db610294_progressive.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">450$</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://rodzen.in/cdn/shop/products/2_78a1337e-cab6-4f30-8378-b711415c5530.webp?v=1675654901" style="height: 285px;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">250$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">450$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+          </div> -->
+  <!-- ------------------------------------------------------------------------------------
+          ------------------------------------------------------------------------------------------------ -->
+  <!-- <div class="row">
+            <div class="col-3">
+             <div class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/410x0iyj+8L._AC_SY780_.jpg" style="height: 285px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">400$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">600$</span></h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://m.media-amazon.com/images/I/413oqmFSKJS._AC_UF1000,1000_QL80_.jpg" style="height: 285px;"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">200$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">450$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/60f5ce82689d230d71a6e67626064404.jpg?imageMogr2/auto-orient%7CimageView2/2/w/1300/q/80/format/webp" style="height: 285px;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">600$ <span style="text-decoration: line-through rgb(244, 21, 21); color: rgb(192, 192, 192);">650$</span></h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://m.media-amazon.com/images/I/71SjgTmteXL._AC_UY350_.jpg" style="height: 285px;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">350$</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button onclick="addToCart() " href="#"  class="btn-cart">Add To Cart</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+      </div> -->
+      <div class="side-nav-categories" style="margin-top: 0px;">
+        <div class="title">Category</div>
+        <ul id="category-tabs">
+            <li><a href="page1.html" class="main-category">PAGE1</a>
+                <ul class="sub-category-tabs">
+                    <li><a href="#">Screens</a></li>
+                    <li><a href="#">Devices</a></li>
+                    <!-- <li><a href="#">t-shirts</a></li> -->
+                </ul>
+            </li>
+        </ul>
+        <ul id="category-tabs">
+            <li><a href="page2.html" class="main-category">PAGE2</a>
+                <ul class="sub-category-tabs">
+                    <li><a href="#">Men`s Wear</a></li>
+                    <li><a href="#">Women`s Wear</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul id="category-tabs">
+            <li><a href="page3.html" class="main-category">PAGE3</a>
+                <ul class="sub-category-tabs">
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+  
+      <div class="container" style="margin-top: 200px;">
+        <div class="row" id="parent" style="margin-top: -662px;  " >
+          
+        </div>
+        <div  id="top" ></div>
+     
+      </div>
+
+      
+      <div class="footer">
+        <div class="content">
+          <div class="services">
+            <h4 class="mobile" id="contact">CONTACT </h4>
+              <p>0123456789</p>
+              <!-- <h4 class="mail">EMAIL</h4> -->
+              <p><a href="#">Onlineshop@gmail.com</a></p>
+          </div>
+          <div class="social-media">
+            <h4>SOCIAL</h4>
+            <p> 
+              <a href="#"> Twitter</a>
+            </p>
+            <p>
+              <a href="#">Facebook</a>
+            </p>
+            <p>
+              <a href="#"></i> Instagram</a>
+            </p></div>
+  
+            <div class="details">
+              <h4 class="address">ADDRESS</h4>
+              <p> 
+            Egypt ( Cairo - Alexandria ) 
+              </p>
+            </div>
+            <div class="about" >
+              <h4 class="address" id="about">ABOUT US</h4>
+              <p> 
+                THE ONLINE SHOP caters to thoughtful shoppers who appreciate unique <br>
+                designs and top quality pieces you just can’t find anywhere else.<br>
+                 We are constantly curating fresh new collections and looking <br>
+                 for the next big thing our customers will love.<br>
+                  Founded in Vienna in 2019,<br>
+                  we are proud to be your Online  Shop that you <br>
+                  can rely on for our expert service and care.<br>
+              </p>
+            </div>
+          </div>
+      </div>
+  
+      <script src="page1.js"></script>
+</body>
+
+</html>
